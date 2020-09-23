@@ -86,7 +86,7 @@ class AvatarWaveHelper(
         waveShiftAnim.addUpdateListener { //获取sin函数的height，更新mFloatView
             val value =
                 mAvatarWaveView.sinHeight - mFloatView.measuredHeight
-            mFloatView.rotation = value + mDefaultFloatViewRotation
+//            mFloatView.rotation = value + mDefaultFloatViewRotation
             mFloatView.translationY = value
             mFloatView.invalidate()
         }
